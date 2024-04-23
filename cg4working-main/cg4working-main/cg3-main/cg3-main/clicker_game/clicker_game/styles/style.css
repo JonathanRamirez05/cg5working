@@ -1,0 +1,198 @@
+/* button templates provided by https://www.w3schools.com/ */
+
+html,
+body {
+    margin: 10px;
+    padding: 0;
+}
+#buySolarEnergy {
+  padding: 15px 20px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color:rgb(255, 238, 0);
+  color:rgb(91, 88, 50);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#buySolarEnergy:hover {filter:brightness(110%)}
+
+#buyWindEnergy {
+    padding: 15px 20px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color:rgb(35, 128, 52);
+    color:rgb(203, 255, 212);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#buyWindEnergy:hover {filter:brightness(120%)}
+
+#buyHydroEnergy {
+    padding: 15px 20px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color:rgb(45, 104, 255);
+    color:rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#buyHydroEnergy:hover {filter:brightness(140%)}
+
+#buyGeoEnergy {
+  padding: 15px 20px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color:rgb(109, 0, 212);
+  color:rgb(231, 211, 255);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#buyGeoEnergy:hover {filter:brightness(140%)}
+
+#buyBioEnergy {
+    padding: 15px 20px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color:rgb(255, 59, 59);
+    color:rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#buyBioEnergy:hover {filter:brightness(130%)}
+
+#buyNukeEnergy {
+    padding: 15px 20px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color:rgb(32, 32, 32);
+    color:rgb(145, 145, 145);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#buyNukeEnergy:hover {filter:brightness(150%)}
+
+#click {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    background-color: #4b4b4b;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #click:after {
+    content: "";
+    background: #d2d2d2;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  #click:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  * {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  

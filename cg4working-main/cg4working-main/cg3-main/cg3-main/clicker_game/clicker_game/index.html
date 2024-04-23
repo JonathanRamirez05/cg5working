@@ -1,0 +1,71 @@
+<!-- Preliminary html code and button template provided by Steven Boyd -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+        <meta charset="utf-8" />
+    </head>
+    <script src="/scripts/building.js"></script>
+    <script src="/scripts/script.js"></script>
+    <body>
+        <main>
+
+            <!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Learn More</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    
+    <h1 id="purchaseEnergyText">Purchase Energy to Learn More</h1>
+    <h1><span id="customText1"></span></h1>
+
+    <label for="info" id="customText2"><b>text</b></label>
+    
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+            <h1>Energy:</h1>
+            <h2 id="score">0</h2>
+            <h3>Energy per Second:</h3>
+            <h4 id="clicksps">0</h4>
+            <button type="button" id="click" onclick="scorePlusPlus()">Click Me!</button>
+            <br />
+            <button
+                type="button"
+                id="buySolarEnergy"
+                onclick="solarEnergy.purchase()"
+                
+            >
+                Buy Solar Energy
+            </button>   
+
+            <button
+                type="button"
+                id="buyWindEnergy"
+                onclick="windEnergy.purchase()"
+                
+            >
+                Buy Wind Energy
+            </button>
+
+            <button type="button" id="buyHydroEnergy" onclick="hydroEnergy.purchase()">
+                Buy Hydropower
+            </button>
+
+            <button type="button" id="buyGeoEnergy" onclick="geoEnergy.purchase()">
+                Buy Geothermal Energy
+            </button>
+
+            <button type="button" id="buyBioEnergy" onclick="bioEnergy.purchase()">
+                Buy Biomass
+            </button>
+
+            <button type="button" id="buyNukeEnergy" onclick="nukeEnergy.purchase()">
+                Buy Nuclear Energy
+            </button>
+        </main>
+    </body>
+</html>
